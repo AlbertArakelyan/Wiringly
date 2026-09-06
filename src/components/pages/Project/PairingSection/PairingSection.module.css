@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wtk-spacing-md);
+  padding: var(--wtk-spacing-lg);
+  background-color: var(--wtk-bg-base);
+  border: var(--wtk-border-width) solid var(--wtk-border-color);
+  border-radius: var(--wtk-border-radius);
+}
+
+.header {
+  display: flex;
+  gap: var(--wtk-spacing-md);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  overflow: hidden;
+  font-size: var(--wtk-font-size-base);
+  font-weight: var(--wtk-font-weight-bold);
+  color: var(--wtk-color-text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wtk-spacing-sm);
+}
+
+.footer {
+  display: flex;
+}

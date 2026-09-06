@@ -6,8 +6,31 @@
 }
 
 .content {
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  gap: var(--wtk-spacing-lg);
   min-height: 0;
   padding: var(--wtk-spacing-lg);
   overflow-y: auto;
+}
+
+.pairings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wtk-spacing-lg);
+}
+
+.empty {
+  height: auto;
+  padding: var(--wtk-spacing-xl) 0;
+}
+
+.error {
+  flex-shrink: 0;
+  margin: 0;
+  padding: var(--wtk-spacing-sm) var(--wtk-spacing-lg);
+  color: var(--wtk-text-error);
+  background-color: var(--wtk-bg-sunken);
+  border-bottom: var(--wtk-border-width) solid var(--wtk-border-color);
 }

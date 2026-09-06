@@ -11,6 +11,9 @@ export interface IPin {
   rightPin: string;
 }
 
+// which side of a pin row an edit lands on
+export type PinSideType = 'leftPin' | 'rightPin';
+
 export interface IPairing {
   id: string;
   leftModuleId: string;

@@ -83,7 +83,27 @@ const useProjects = () => {
     [projects, persist],
   );
 
-  return { projects, isLoading, error, createProject, renameProject, deleteProject };
+  const updateProject = useCallback(
+    (updated: IProject) =>
+      persist(
+        projects.map((project) =>
+          project.id === updated.id
+            ? { ...updated, updatedAt: new Date().toISOString() }
+            : project,
+        ),
+      ),
+    [projects, persist],
+  );
+
+  return {
+    projects,
+    isLoading,
+    error,
+    createProject,
+    renameProject,
+    deleteProject,
+    updateProject,
+  };
 };
 
 export default useProjects;

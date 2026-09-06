@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  gap: var(--wtk-spacing-sm);
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+}
+
+.arrow {
+  flex-shrink: 0;
+  color: var(--wtk-color-text-muted);
+  font-family: var(--wtk-font-family-mono);
+}

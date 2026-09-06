@@ -5,13 +5,27 @@ import ProjectsPage from './components/pages/Projects/ProjectsPage/ProjectsPage'
 import useProjects from './hooks/useProjects';
 
 const App = () => {
-  const { projects, isLoading, error, createProject, renameProject, deleteProject } = useProjects();
+  const {
+    projects,
+    isLoading,
+    error,
+    createProject,
+    renameProject,
+    deleteProject,
+    updateProject,
+  } = useProjects();
   const [openedProjectId, setOpenedProjectId] = useState('');
 
   const openedProject = projects.find((project) => project.id === openedProjectId);
 
   if (openedProject) {
-    return <ProjectPage project={openedProject} onBack={() => setOpenedProjectId('')} />;
+    return (
+      <ProjectPage
+        project={openedProject}
+        onChangeProject={updateProject}
+        onBack={() => setOpenedProjectId('')}
+      />
+    );
   }
 
   return (

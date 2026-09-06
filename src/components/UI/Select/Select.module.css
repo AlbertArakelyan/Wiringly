@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wtk-spacing-xs);
+  width: 100%;
+}
+
+.label {
+  font-size: var(--wtk-font-size-base);
+  color: var(--wtk-input-label-fg);
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  width: 100%;
+  height: var(--wtk-control-height);
+  padding: 0 calc(var(--wtk-spacing-xl) + var(--wtk-spacing-sm)) 0 var(--wtk-spacing-md);
+  font-family: var(--wtk-font-family);
+  font-size: var(--wtk-font-size-base);
+  color: var(--wtk-input-fg);
+  background-color: var(--wtk-input-bg);
+  border: var(--wtk-border-width) solid var(--wtk-input-border);
+  border-radius: var(--wtk-border-radius);
+  appearance: none;
+}
+
+.select:hover:not(:disabled):not(:focus) {
+  border-color: var(--wtk-input-border-hover);
+}
+
+.select:focus {
+  border-color: var(--wtk-input-border-focus);
+  outline: none;
+  box-shadow: 0 0 0 var(--wtk-focus-ring-width) var(--wtk-focus-ring-color);
+}
+
+.select:disabled {
+  color: var(--wtk-input-fg-disabled);
+  background-color: var(--wtk-input-bg-disabled);
+}
+
+.selectSm {
+  height: var(--wtk-control-height-sm);
+}
+
+.selectMd {
+  height: var(--wtk-control-height);
+}
+
+.selectLg {
+  height: var(--wtk-control-height-lg);
+}
+
+.selectError {
+  border-color: var(--wtk-input-border-error);
+}
+
+/* The arrow sits over the native one, which appearance: none removed. */
+.arrow {
+  position: absolute;
+  right: var(--wtk-spacing-md);
+  display: flex;
+  color: var(--wtk-color-text-muted);
+  pointer-events: none;
+}
+
+.arrow svg {
+  width: var(--wtk-icon-size);
+  height: var(--wtk-icon-size);
+}
+
+.error {
+  margin: 0;
+  font-size: var(--wtk-font-size-small);
+  color: var(--wtk-input-error-fg);
+}
