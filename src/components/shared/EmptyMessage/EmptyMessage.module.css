@@ -1,0 +1,27 @@
+.emptyMessage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wtk-spacing-sm);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: var(--wtk-spacing-xl);
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--wtk-font-size-large);
+  font-weight: var(--wtk-font-weight-bold);
+  color: var(--wtk-color-text);
+}
+
+.description {
+  max-width: 42ch;
+  margin: 0;
+  color: var(--wtk-color-text-muted);
+}
+
+.action {
+  margin-top: var(--wtk-spacing-md);
+}

@@ -1,0 +1,46 @@
+.headerBar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--wtk-spacing-md);
+  min-height: var(--wtk-headerbar-height);
+  padding: var(--wtk-spacing-sm) var(--wtk-spacing-lg);
+  color: var(--wtk-headerbar-fg);
+  background-color: var(--wtk-headerbar-bg);
+  border-bottom: var(--wtk-border-width) solid var(--wtk-headerbar-border);
+}
+
+.leading {
+  display: flex;
+  align-items: center;
+}
+
+.titles {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  overflow: hidden;
+  font-size: var(--wtk-font-size-large);
+  font-weight: var(--wtk-font-weight-bold);
+  color: var(--wtk-headerbar-title-fg);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--wtk-font-size-small);
+  color: var(--wtk-headerbar-subtitle-fg);
+}
+
+.actions {
+  display: flex;
+  gap: var(--wtk-spacing-sm);
+  align-items: center;
+}

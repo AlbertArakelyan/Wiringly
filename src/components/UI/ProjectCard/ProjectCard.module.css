@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  gap: var(--wtk-spacing-md);
+  align-items: center;
+  padding: var(--wtk-spacing-sm) var(--wtk-spacing-md);
+  background-color: var(--wtk-bg-base);
+  border: var(--wtk-border-width) solid var(--wtk-border-color);
+  border-radius: var(--wtk-border-radius);
+}
+
+.card:hover {
+  background-color: var(--wtk-list-row-bg-hover);
+}
+
+.open {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--wtk-spacing-xs);
+  align-items: flex-start;
+  min-width: 0;
+  padding: var(--wtk-spacing-sm) 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: var(--wtk-border-radius-sm);
+  cursor: default;
+}
+
+.open:focus-visible {
+  outline: var(--wtk-focus-ring-width) solid var(--wtk-focus-ring-color);
+  outline-offset: 1px;
+}
+
+.name {
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: var(--wtk-font-weight-bold);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  font-size: var(--wtk-font-size-small);
+  color: var(--wtk-color-text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--wtk-spacing-sm);
+}
