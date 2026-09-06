@@ -62,7 +62,7 @@ const ModulesPanel: FC<IModulesPanelProps> = ({
               <span className={styles.name}>{module.name}</span>
               <WtkButton
                 size="sm"
-                variant="flat"
+                variant="normal"
                 title={`Remove ${module.name}`}
                 onClick={() => onDeleteModule(module.id)}
               >
