@@ -1,6 +1,7 @@
 import { type FC, useState } from 'react';
 import { WtkButton } from 'wtk-ui-react';
 
+import useAppState from '../../../../hooks/useAppState';
 import EmptyMessage from '../../../shared/EmptyMessage/EmptyMessage';
 import HeaderBar from '../../../shared/HeaderBar/HeaderBar';
 import ConfirmModal from '../../../UI/ConfirmModal/ConfirmModal';
@@ -10,17 +11,21 @@ import styles from './ProjectsPage.module.css';
 import type { IProjectsPageProps } from './types';
 
 const ProjectsPage: FC<IProjectsPageProps> = ({
-  projects,
-  isLoading = false,
-  error = '',
-  onCreateProject,
-  onRenameProject,
-  onDeleteProject,
-  onOpenProject,
+  contentClassName = '',
   listClassName = '',
   className = '',
   ...rest
 }) => {
+  const {
+    projects,
+    isLoading,
+    error,
+    openProject,
+    createProject,
+    renameProject,
+    deleteProject,
+  } = useAppState();
+
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [renamedProjectId, setRenamedProjectId] = useState('');
   const [deletedProjectId, setDeletedProjectId] = useState('');
@@ -45,9 +50,9 @@ const ProjectsPage: FC<IProjectsPageProps> = ({
 
   const handleSubmit = (name: string) => {
     if (renamedProject) {
-      onRenameProject(renamedProject.id, name);
+      renameProject(renamedProject.id, name);
     } else {
-      onCreateProject(name);
+      createProject(name);
     }
 
     closeForm();
@@ -55,7 +60,7 @@ const ProjectsPage: FC<IProjectsPageProps> = ({
 
   const handleDelete = () => {
     if (deletedProject) {
-      onDeleteProject(deletedProject.id);
+      deleteProject(deletedProject.id);
     }
 
     setDeletedProjectId('');
@@ -74,7 +79,7 @@ const ProjectsPage: FC<IProjectsPageProps> = ({
 
       {error && <p className={styles.error}>{error}</p>}
 
-      <div className={styles.content}>
+      <div className={`${styles.content} ${contentClassName}`}>
         {isLoading && <p className={styles.status}>Loading projects.</p>}
 
         {!isLoading && !projects.length && (
@@ -95,7 +100,7 @@ const ProjectsPage: FC<IProjectsPageProps> = ({
               <ProjectCard
                 key={project.id}
                 project={project}
-                onOpen={onOpenProject}
+                onOpen={openProject}
                 onRename={openRenameForm}
                 onDelete={setDeletedProjectId}
               />
