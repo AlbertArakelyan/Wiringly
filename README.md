@@ -20,10 +20,12 @@
 
 <br clear="left">
 
-<img src="https://img.shields.io/github/v/release/AlbertArakelyan/Wiringly?color=blue&style=flat-square" alt="GitHub release (latest by date)">
-<img src="https://img.shields.io/badge/language-Rust | TypeScript-orange?style=flat-square" alt="Language">
-<img src="https://img.shields.io/badge/platforms-Windows,%20Mac%20OS,%20Linux-green?style=flat-square" alt="Platforms">
-<img src="https://img.shields.io/github/license/AlbertArakelyan/lumark?style=flat-square" alt="License">
+<div>
+  <img src="https://img.shields.io/github/v/release/AlbertArakelyan/Wiringly?color=blue&style=flat-square" alt="GitHub release (latest by date)">
+  <img src="https://img.shields.io/badge/language-Rust | TypeScript-orange?style=flat-square" alt="Language">
+  <img src="https://img.shields.io/badge/platforms-Windows,%20Mac%20OS,%20Linux-green?style=flat-square" alt="Platforms">
+  <img src="https://img.shields.io/github/license/AlbertArakelyan/lumark?style=flat-square" alt="License">
+</div>
 
 ![Wiringly demo](./demo.gif)
 
