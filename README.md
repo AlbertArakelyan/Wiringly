@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo.png" alt="Wiringly" style="max-height: 320px">
+  <img src="./logo.png" alt="Wiringly" style="max-width: 100%; height: auto; max-height: 138px;">
 
   <h1>
     Wiringly
