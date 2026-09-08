@@ -1,12 +1,26 @@
-# Wiringly
+<div align="center">
+  <img src="./logo.png" alt="Wiringly" style="max-width: 320px">
 
-A desktop app for writing down how you wired two modules together, and exporting it as text.
+  <h1>
+    Wiringly
+  </h1>
 
-Add the modules you are working with to a project, say `ESP32` and `OLED LCD Display`, pair them up,
-then list the pins that connect. Export writes the project to a `.txt` file you can keep next to
-your firmware.
+  <p>
+    A de  exporting it as text.
+  </p>
 
-Runs on Windows, macOS and Linux.
+  <p>
+    Add the modules you are working with to a project, say `ESP32` and `OLED LCD Display`, pair them up,
+    then list the pins that connect. Export writes the project to a `.txt` file you can keep next to
+    your firmware.
+  </p>
+
+  <p>
+    Runs on Windows, macOS and Linux.
+  </p>
+</div>
+
+![Wiringly demo](./demo.gif)
 
 ## Features
 
