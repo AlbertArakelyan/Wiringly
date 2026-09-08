@@ -2,21 +2,19 @@
   <h1>
     Wiringly
   </h1>
+</div>
 
-  <img src="./logo.png" alt="Wiringly" width="138">
+<div>
+  <img src="./logo.png" alt="Wiringly" width="138" style="float: left">
 
   <p>
-    A de  exporting it as text.
+    A desktop app for writing down how you wired two modules together, and exporting it as text.
   </p>
-
+  
   <p>
     Add the modules you are working with to a project, say `ESP32` and `OLED LCD Display`, pair them up,
     then list the pins that connect. Export writes the project to a `.txt` file you can keep next to
     your firmware.
-  </p>
-
-  <p>
-    Runs on Windows, macOS and Linux.
   </p>
 </div>
 
