@@ -7,7 +7,7 @@
 <div>
   <img src="./logo.png" alt="Wiringly" width="138" align="left">
 
-  <p style="padding-top: 8px">
+  <p>
     A desktop app for writing down how you wired two modules together, and exporting it as text.
   </p>
 
