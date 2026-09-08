@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./logo.png" alt="Wiringly" width="138">
-
   <h1>
     Wiringly
   </h1>
+
+  <img src="./logo.png" alt="Wiringly" width="138">
 
   <p>
     A de  exporting it as text.
