@@ -5,18 +5,20 @@
 </div>
 
 <div>
-  <img src="./logo.png" alt="Wiringly" width="138" style="float: left">
+  <img src="./logo.png" alt="Wiringly" width="138" align="left">
 
   <p>
     A desktop app for writing down how you wired two modules together, and exporting it as text.
   </p>
-  
+
   <p>
-    Add the modules you are working with to a project, say `ESP32` and `OLED LCD Display`, pair them up,
-    then list the pins that connect. Export writes the project to a `.txt` file you can keep next to
-    your firmware.
+    Add the modules you are working with to a project, say <code>ESP32</code> and <code>OLED LCD Display</code>,
+    pair them up, then list the pins that connect. Export writes the project to a <code>.txt</code> file you can
+    keep next to your firmware.
   </p>
 </div>
+
+<br clear="left">
 
 ![Wiringly demo](./demo.gif)
 
