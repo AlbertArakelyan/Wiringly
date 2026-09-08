@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-<div>
+<div align="center">
   <img src="https://img.shields.io/github/v/release/AlbertArakelyan/Wiringly?color=blue&style=flat-square" alt="GitHub release (latest by date)">
   <img src="https://img.shields.io/badge/language-Rust | TypeScript-orange?style=flat-square" alt="Language">
   <img src="https://img.shields.io/badge/platforms-Windows,%20Mac%20OS,%20Linux-green?style=flat-square" alt="Platforms">
