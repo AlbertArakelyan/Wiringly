@@ -12,7 +12,7 @@
 </div>
 
 <div>
-  <img src="./logo.png" alt="Wiringly" width="138" align="left">
+  <img src="./logo.svg" alt="Wiringly" width="138" align="left">
 
   <p>
     A desktop app for writing down how you wired two modules together, and exporting it as text.
